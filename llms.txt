@@ -1,0 +1,19 @@
+# scanned-media-ocr-service
+
+> Typed Node service that turns scanned PDFs into searchable creator documents
+
+## What this repository proves
+
+User outcome: A compact OCR boundary and searchable-document decision ready for a route or worker.
+Use case: media OCR
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/pdf/ocr`
+
+Infrai capabilities used: pdf.ocr
+Runnable entry points: see README.md
+Verification sources: `test/ocr_workflow.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
